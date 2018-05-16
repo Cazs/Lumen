@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="lumen.afridigisolutions.com.lumen.MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="16pt"
+        android:text="Lumen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/lbl_title">
+
+        <SeekBar
+            android:id="@+id/sb_red"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:layout_margin="20dp"/>
+
+        <SeekBar
+            android:id="@+id/sb_green"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:layout_margin="20dp"/>
+
+        <SeekBar
+            android:id="@+id/sb_blue"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:layout_margin="20dp"/>
+    </LinearLayout>
+</RelativeLayout>
